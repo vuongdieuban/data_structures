@@ -12,8 +12,11 @@ class Node:
 class UnorderedList(Node):
     """"
     functions:
-        def insertAtEnd(): add item to the end of the list, similar to append
-        def insertAtBeginning(): add item to the beginning of the list
+        def insertAtEnd(self, item): add item to the end of the list, similar to append
+        def insertAtBeginning(self, item): add item to the beginning of the list
+        def insertAtPos(self, item, pos): add item at any position pos, first position in list is pos = 1
+        
+
         def pop(): remove at the end node (last in first out)
         def print() : traverse the list and print data at every node
     """
@@ -54,6 +57,23 @@ class UnorderedList(Node):
             self.head = new_node
             return
 
+    def insertAtPos(self, item, pos):
+        new_node = Node(item)
+        new_node.data = item
+
+        if self.head is None:
+            new_node.next = None
+            self.head = new_node
+            return
+
+        if self.head is not None:
+            temp = self.head
+            for i in range(1, pos-1):
+                temp = temp.next
+            new_node.next = temp.next
+            temp.next = new_node
+            return
+
     def print(self):
         temp = self.head
         print("List is:")
@@ -65,10 +85,12 @@ class UnorderedList(Node):
 
 if __name__ == '__main__':
     mylist = UnorderedList()
-    mylist.insertAtEnd(5)
-    mylist.insertAtEnd(7)
-    mylist.insertAtEnd(10)
-    mylist.insertAtEnd(11)
-    mylist.insertAtBeginning(8)
-    mylist.insertAtBeginning(2)
+    mylist.insertAtEnd(5)   # 5
+    mylist.insertAtEnd(7)   # 5, 7
+    mylist.insertAtEnd(10)  # 5, 7, 10
+    mylist.insertAtEnd(11)  # 5, 7, 10, 11
+    mylist.insertAtBeginning(8) # 8, 5, 7, 10, 11
+    mylist.insertAtBeginning(2) # 2, 8, 5, 7, 10, 11
+    mylist.insertAtPos(3, 2) # 2, 3, 8, 5, 7, 10, 11
+    mylist.insertAtPos(1, 5) # 2, 3, 8, 5, 1, 7, 10, 11
     mylist.print()
