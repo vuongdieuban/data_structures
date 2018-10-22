@@ -16,6 +16,7 @@ class UnorderedList(Node):
         def insertAtBeginning(self, item): add item to the beginning of the list
         def insertAtPos(self, item, pos): add item at any position pos, first position in list is pos = 1
         def removeAtPos(self, item, pos): remove item at any position pos, first position in list is pos = 1
+        def reverseList(self, temp): reverse the linked list using recursion
 
         def print() : traverse the list and print data at every node
     """
@@ -25,7 +26,6 @@ class UnorderedList(Node):
 
     def isEmpty(self):
         return self.head is None
-
 
     def insertAtEnd(self, item):
         last_node = self.head   # since we cannnot modify the head, we use the last_node to traverse the list
@@ -42,7 +42,6 @@ class UnorderedList(Node):
         last_node.next = new_node
         return
 
-
     def insertAtBeginning(self, item):
         new_node = Node(item)
         new_node.data = item
@@ -50,7 +49,6 @@ class UnorderedList(Node):
         new_node.next = self.head   # head is init as None, so if list is empty, first node.next = None
         self.head = new_node
         return
-
 
     def insertAtPos(self, item, pos):
         new_node = Node(item)
@@ -69,7 +67,6 @@ class UnorderedList(Node):
         temp.next = new_node
         return
 
-
     def removeAtPos(self,pos):
         if self.head is None:
             print("List is empty")
@@ -86,6 +83,14 @@ class UnorderedList(Node):
         temp.next = delete_node.next
         return
 
+    def reverseList(self, temp):
+        if temp.next is None:
+            self.head = temp
+            return
+
+        self.reverseList(temp.next)
+        temp.next.next = temp
+        temp.next = None
 
     def print(self):
         temp = self.head
@@ -106,5 +111,6 @@ if __name__ == '__main__':
     mylist.insertAtPos(5, 1) # 5, 2, 3, 8, 5, 7
     mylist.removeAtPos(4)  # 5, 2, 3, 5, 7
     mylist.removeAtPos(1) # 2, 3, 5, 7
+    mylist.reverseList(mylist.head) # 7, 5, 3, 2
 
     mylist.print()
