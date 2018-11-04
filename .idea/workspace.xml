@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f51e4baf-3eb2-469e-a167-4187bcb0f904" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,45 +45,46 @@
     <session id="-293894202">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4767" />
+          <entry key="py" value="6301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4767" />
+          <entry key="Python" value="6301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/linked_list.py">
+        <entry file="file://$PROJECT_DIR$/leetcode/3sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+            <state relative-caret-position="289">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
-                <marker date="1540251702683" expanded="true" signature="2487:2663" ph="..." />
+                <marker date="1541303906857" expanded="true" signature="314:315" ph="..." />
               </folding>
             </state>
           </provider>
@@ -108,6 +108,8 @@
         <option value="$PROJECT_DIR$/Stack.py" />
         <option value="$PROJECT_DIR$/leetcode/remove_nth_node_from_end_of_list.py" />
         <option value="$PROJECT_DIR$/linked_list.py" />
+        <option value="$PROJECT_DIR$/hash_table.py" />
+        <option value="$PROJECT_DIR$/leetcode/3sum.py" />
       </list>
     </option>
   </component>
@@ -129,6 +131,11 @@
             <path>
               <item name="Data_Structures" type="b2602c69:ProjectViewProjectNode" />
               <item name="Data_Structures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Data_Structures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Data_Structures" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Data_Structures" type="b2602c69:ProjectViewProjectNode" />
@@ -155,7 +162,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.linked_list">
+  <component name="RunManager" selected="Python.3sum">
+    <configuration name="3sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Data Structures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/3sum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Data Structures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,9 +229,11 @@
     <list>
       <item itemvalue="Python.Stack" />
       <item itemvalue="Python.linked_list" />
+      <item itemvalue="Python.3sum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3sum" />
         <item itemvalue="Python.linked_list" />
         <item itemvalue="Python.Stack" />
       </list>
@@ -249,13 +279,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Stack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -270,12 +293,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
+        <state relative-caret-position="1116">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hash_table.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/3sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <marker date="1540251702683" expanded="true" signature="2487:2663" ph="..." />
+            <marker date="1541303906857" expanded="true" signature="314:315" ph="..." />
           </folding>
         </state>
       </provider>
