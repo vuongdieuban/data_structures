@@ -9,7 +9,7 @@ class Node:
         self.next = None
 
 
-class UnorderedList(Node):
+class UnorderedList():
     """"
     functions:
         def insertAtEnd(self, item): add item to the end of the list, similar to append
